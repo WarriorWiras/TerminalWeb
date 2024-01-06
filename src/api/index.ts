@@ -1,7 +1,9 @@
 import axios from 'axios';
 import config from '../../config.json';
 import packagejson from '../../package.json'
-
+require('dotenv').config();
+const apiKey1 = process.env.API_KEY_NASA;
+const apikey2 = process.env.API_KEY_MOVIE;
 
 export const getProjects = async () => {
   const { data } = await axios.get(
@@ -50,7 +52,7 @@ export const getJoke = async () => {
 
 
 export const getNasa = async () => {
-  const { data } = await axios.get('https://api.nasa.gov/planetary/apod?api_key=r7qfXebvnfwEQr4qlad6AJgJvuQBRxtB63ClVE8f');
+  const { data } = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey1}`);
 
   return {
     nasa: `<p>Opening NASA picture of the day...</p>
@@ -157,7 +159,7 @@ export const getCountry = async (name: string) => {
     }
     </style>
           <h1><center>${data[0].name.official}</center></h1>
-          <img src="${data[0].flags.png}" alt="NASA Image of the Day" width="500" height="600" class="center">
+          <img src="${data[0].flags.png}" alt="Country Flag" width="500" height="600" class="center">
           <p>${flaginfo}</p>
 Currency: ${nameofcountrydollar}
 Symbol: ${currencycode} (${countrysymbol})
@@ -174,7 +176,7 @@ Map: <a href="${data[0].maps.googleMaps}" target="_blank">click here for Google 
 
 export const getMovie = async (moviename: string) =>{
 
-  const { data } = await axios.get(`https://www.omdbapi.com/?t=${moviename}&plot=full&apikey=c54314af`);
+  const { data } = await axios.get(`https://www.omdbapi.com/?t=${moviename}&plot=full&apikey=${apikey2}`);
 
 const ratings = data.Ratings;
 
