@@ -1,20 +1,4 @@
 
-
-
-
-//have not done yet
-
-//resume to think on what to put
-
-
-
-
-
-
-
-
-
-// Below is mine (done)
 export * from './info';
 export * from './about';
 export * from './projects';
@@ -32,14 +16,3 @@ export * from './theme';
 export * from './utils';
 export * from './resume';
 export * from './neofetch';
-// can be add on abit
-
-
-
-
-/*
-resume          --downloads my resume
-
-API commands
-readme          --prints github readme
-*/
