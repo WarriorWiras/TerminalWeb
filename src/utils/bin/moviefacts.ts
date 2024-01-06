@@ -4,7 +4,7 @@ export const moviefacts = async (args: string[]): Promise<string> => {
   const movie = args.join('+');
 
   if (!movie) {
-    return 'Usage: movie [movie name]. Example: movie avatar';
+    return 'Usage: moviefacts [movie name]. Example: movie avatar';
   }
 
   const countryfacts = await getMovie(movie);
