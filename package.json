@@ -1,17 +1,16 @@
 {
   "name": "terminal",
   "version": "2.14.7",
-  "license": "MIT",
   "author": {
     "name": "Muhd Wafiyuddin",
-    "url": "wafiyuddin.name",
+    "url": "https://www.wafiyuddin.name",
     "email": "muhdwafiyuddin5@gmail.com",
 "resume": "https://drive.google.com/drive/folders/1i-AKIR8WeJUSSrv7Knjpa_yRCHPeBYJq?usp=sharing"
 
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/m4tt72/terminal"
+    "url": "https://github.com/WarriorWiras/TerminalWeb"
   },
   "scripts": {
     "start": "next start",
