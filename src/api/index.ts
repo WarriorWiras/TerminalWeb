@@ -47,7 +47,7 @@ export const getJoke = async () => {
 };
 
 
-//nasa api key: r7qfXebvnfwEQr4qlad6AJgJvuQBRxtB63ClVE8f
+
 
 export const getNasa = async () => {
   const { data } = await axios.get('https://api.nasa.gov/planetary/apod?api_key=r7qfXebvnfwEQr4qlad6AJgJvuQBRxtB63ClVE8f');
