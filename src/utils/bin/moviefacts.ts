@@ -1,6 +1,6 @@
 import { getMovie } from '../../api';
 
-export const movie = async (args: string[]): Promise<string> => {
+export const moviefacts = async (args: string[]): Promise<string> => {
   const movie = args.join('+');
 
   if (!movie) {
@@ -11,5 +11,5 @@ export const movie = async (args: string[]): Promise<string> => {
 
   return countryfacts.movie;
 };
-export const Movie = movie;
-export const MOVIE = movie;
+export const Moviefacts = moviefacts;
+export const MOVIEFACTS = moviefacts;
