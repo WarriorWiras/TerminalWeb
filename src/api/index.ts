@@ -1,6 +1,6 @@
 import axios from 'axios';
 import config from '../../config.json';
-import packagejson from '../../package.json'
+import packagejson from '../../package.json';
 require('dotenv').config();
 const apiKey1 = process.env.API_KEY_NASA;
 const apikey2 = process.env.API_KEY_MOVIE;
