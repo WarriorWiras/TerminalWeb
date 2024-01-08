@@ -19,6 +19,7 @@ export const help = async (args: string[]): Promise<string> => {
   Help            >>Display all available commands
   Theme           >>Change theme
   Resume          >>View my resume
+  Readme          >>Produce Readme text
 
   Socials:
   Instagram       >>Open Instragram profile

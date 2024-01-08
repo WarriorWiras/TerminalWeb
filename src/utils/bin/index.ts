@@ -16,3 +16,4 @@ export * from './theme';
 export * from './utils';
 export * from './resume';
 export * from './neofetch';
+export * from './readme';
