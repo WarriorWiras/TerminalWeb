@@ -16,6 +16,12 @@ export const getProjects = async () => {
   return data;
 };
 
+export const getreadme = async () => {
+  const { data } = await axios.get(config.readme);
+
+  return data;
+}
+
 export const getBio = async () => {
   const { data } = await axios.get(config.bioUrl);
 
