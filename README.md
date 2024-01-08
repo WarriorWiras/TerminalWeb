@@ -2,7 +2,7 @@
 
 Hi, I am a teenager who is passionate in expanding the knowledge in Cyber Security Fields.
 
-Welcome to my website!
+Welcome to my website version 1.0!
 
 More about me:
 'neofetch' - short summary
