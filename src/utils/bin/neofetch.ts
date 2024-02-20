@@ -98,7 +98,7 @@ message += `<span style="color: ${mainColor}"><i class="fa fa-certificate"></i><
 message += `<span style="color: ${mainColor}"><i class="bi bi-vector-pen"></i></span> More about me located @<a href = "${packageJson.author.url}" target = "_self">Here</a>\n`;
  message += `<span style="color: ${mainColor}"><i></i>.....................\n`;
 message += `<span style="color: ${mainColor}"><i class="bi bi-telephone-fill"></i> CONTACTS</span>\n.....................\n`;
-message += `<span style="color: ${mainColor}"><i class="bi bi-mailbox"></i></span> Email me @${packageJson.author.email}\n`;
+message += `<span style="color: ${mainColor}"><i class="bi bi-mailbox"></i></span> Email me at ${packageJson.author.email}\n`;
 message += `<span style="color: ${mainColor}"><i class="fa fa-file-text-o"></i></span> Click <a href="${packageJson.author.resume}" target="_blank">here</a> to view my resume\n`
 message += `<span style="color: ${mainColor}"><i class="fa fa-linkedin-square"></i></span> https://www.linkedin.com/in/${config.social.linkedin}/\n`;
 message += `<span style="color: ${mainColor}"><i class="fa fa-github-square"></i></span> https://github.com/${config.social.github}/\n`;

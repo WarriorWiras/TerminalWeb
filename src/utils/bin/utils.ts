@@ -12,7 +12,7 @@ export const help = async (args: string[]): Promise<string> => {
   [ctrl+l/Clear]: Clear terminal.
   [ctrl+c]: Cancel command.
   
-  About           >>very short summary
+  About           >>Very short summary
   Banner          >>Display my Banner
   Info            >>Brief summary of the website
   Email           >>Opens mail
@@ -24,7 +24,7 @@ export const help = async (args: string[]): Promise<string> => {
   Socials:
   Instagram       >>Open Instragram profile
   Linkedin        >>Open Linkedin profile
-  Github          >>Open github site
+  Github          >>Open Github site
   Gui             >>Open Gui Website
   
   API commands:
@@ -42,15 +42,15 @@ export const help = async (args: string[]): Promise<string> => {
   
   Linux commands:
   Sudo            >>You become a super user
-  Echo [string]   >>print out string
+  Echo [string]   >>Print out string
   Whoami          >>Display current user
-  Cd              >>change directory
-  Pwd             >>working directory
+  Cd              >>Change directory
+  Pwd             >>Working directory
   Date            >>Displays date
-  Ls              >>list files
-  Dir             >>list directories
-  Mkdir [name]    >>creates a directory
-  Shutdown        >>shuts down the system
+  Ls              >>List files
+  Dir             >>List directories
+  Mkdir [name]    >>Creates a directory
+  Shutdown        >>Shuts down the system
   Cal             >>Display a simple calendar of the current month
   
   Linux CLI apps:
