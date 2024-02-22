@@ -79,7 +79,7 @@ export const getNasa = async () => {
 };
 
 export const getNumber = async (num: string) => {
-  const { data } = await axios.get(`http://numbersapi.com/${num}?ATm`);
+  const { data } = await axios.get(`http://numbersapi.com/${num}`);
 
   return data;
 };
