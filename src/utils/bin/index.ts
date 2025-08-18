@@ -17,3 +17,4 @@ export * from './utils';
 export * from './resume';
 export * from './neofetch';
 export * from './readme';
+export * from './gamefacts';

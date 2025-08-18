@@ -38,6 +38,7 @@ export const help = async (args: string[]): Promise<string> => {
   Checkpassword   >>Is your password strong?
   Countryfacts    >>Display facts about countries
   Moviefacts      >>Showcase facts about movies
+  Gamefacts       >>Showcase facts about games
   
   
   Linux commands:
