@@ -8,6 +8,7 @@ dotenv.config();
 
 const apiKey1 = process.env.API_KEY_NASA;
 const apikey2 = process.env.API_KEY_MOVIE;
+const apikey3 = process.env.API_KEY_GAME;
 
 
 export const getProjects = async () => {
@@ -223,5 +224,28 @@ const ratingsStrings = ratings.map(rating => `${rating.Source}: ${rating.Value} 
 
 <span style="color: cyan">To view poster:</span> <a href="${data.Poster}" target="_blank">click here to view the poster</a>
 `,
+  };
+};
+
+export const getGame = async (gamename: string) => {
+  const { data } = await axios.get(
+    `https://api.rawg.io/api/games/${encodeURIComponent(gamename)}?key=${apikey3}`
+  );
+
+  return {
+    game: `
+<span style="color: cyan">🎮 Name:</span> ${data.name}
+<span style="color: cyan">📅 Release Date:</span> ${data.released || "N/A"}
+<span style="color: cyan">⭐ Rating:</span> ${data.rating} / ${data.rating_top}
+<span style="color: cyan">🕹 Platforms:</span> ${data.platforms.map((p: any) => p.platform.name).join(", ")}
+<span style="color: cyan">🎭 Genres:</span> ${data.genres.map((g: any) => g.name).join(", ")}
+
+<span style="color: cyan">📝 Description:</span> ${data.description_raw}
+
+<span style="color: cyan">🌐 Website:</span> <a href="${data.website}" target="_blank">${data.website || "N/A"}</a>
+<span style="color: cyan">📰 Metacritic:</span> ${data.metacritic ? data.metacritic : "N/A"}
+
+<img src="${data.background_image}" alt="Poster" width="300"/>
+    `,
   };
 };
